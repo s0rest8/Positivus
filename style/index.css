@@ -1,0 +1,14 @@
+@import url(blocks/header.css);
+@import url(libs/normalize.css);
+@import url(libs/default.css);
+@import url(blocks/container.css);
+@import url(libs/fonts.css);
+@import url(blocks/greeting.css);
+@import url(libs/shared.css);
+@import url(blocks/services.css);
+@import url(blocks/studies.css);
+@import url(blocks/process.css);
+@import url(blocks/team.css);
+@import url(blocks/feedback.css);
+@import url(blocks/footer.css);
+@import url(blocks/testimonials.css);

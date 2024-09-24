@@ -1,0 +1,199 @@
+.greeting {
+    margin-bottom: 140px;
+}
+
+.greeting__wrapper {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+
+.greeting__consultation {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width: 531px;
+
+}
+
+.greeting-navigation {
+    font-weight: 500;
+    font-size: 60px;
+    color: black;
+    padding-bottom: 35px;
+}
+
+.greeting-agency {
+    color: black;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    padding-bottom: 35px;
+    padding-right: 33px;
+}
+
+.greeting-img {}
+
+.greeting-img_mobile {
+    display: none;
+}
+
+
+.greeting-marquee {
+    width: 324px;
+    height: 48px;
+    margin: 30px auto;
+    overflow: hidden;
+}
+
+.greeting-marquee__slider {
+    width: 1024px;
+    height: 48px;
+    display: flex;
+    position: relative;
+    left: 0;
+    transition: all ease 1s;
+
+}
+
+.greeting-marquee__slider>img {
+    width: 147px;
+    margin-right: 40px;
+}
+
+
+
+/* /* .greeting-marquee__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} */
+
+
+@media (max-width: 1240px) {
+
+    .greeting-img img {
+        max-width: 510px;
+    }
+
+    .greeting-navigation {
+        font-size: 54px;
+    }
+
+    .greeting-agency {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1030px) {
+
+    .greeting-img img {
+        max-width: 450px;
+    }
+
+    .greeting-navigation {
+        font-size: 42px;
+
+    }
+
+    .greeting-agency {
+
+        font-size: 16px;
+        line-height: 150%;
+
+    }
+
+    .greeting-img {
+        display: none;
+    }
+
+    .greeting-img_mobile {
+        display: block;
+    }
+
+    .greeting__consultation {
+        display: flex;
+        align-items: center;
+    }
+
+    .greeting__consultation {
+        max-width: 959px;
+        display: flex;
+        margin-bottom: 60px;
+
+    }
+
+    .greeting-img_mobile img {
+        max-width: 480px;
+    }
+
+    .greeting-marquee__list {
+        display: grid;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+
+@media (max-width: 822px) {
+    .greeting__consultation {
+        max-width: 959px;
+
+    }
+
+    .greeting-img_mobile img {
+        max-width: 480px;
+
+    }
+
+    .greeting-marquee__list {
+
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+
+@media (max-width: 598px) {
+    .greeting-img_mobile img {
+        max-width: 340px;
+
+    }
+
+    .greeting-navigation {
+        font-size: 35px;
+
+    }
+
+    .greeting-agency {
+
+        font-size: 12px;
+        line-height: 150%;
+    }
+
+    .greeting-marquee__list {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 406px) {
+    .greeting-img_mobile img {
+        max-width: 240px;
+
+    }
+
+    .greeting-navigation {
+        font-size: 30px;
+    }
+
+    .header-logo img {
+        max-width: 180px;
+    }
+
+    .button {
+        font-size: 14px;
+    }
+
+
+}

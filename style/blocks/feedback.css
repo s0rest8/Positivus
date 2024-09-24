@@ -1,0 +1,168 @@
+.feedback {
+    padding-bottom: 140px;
+}
+
+.feedback-content {
+    position: relative;
+    padding: 60px 100px 0 ;
+    overflow: hidden;
+}
+
+.feedback-header__description {
+    width: 323px;
+}
+
+.feedback-content__wrapper {
+    max-width: 556px;
+}
+
+.feedback-content-btn {
+    width: 100%;
+    max-width: 556px;
+}
+
+.feedback-content-form {
+    margin-bottom: 40px;
+}
+
+
+.feedback-content-form__date {
+    margin-bottom: 40px;
+}
+
+
+.feedback-content__img {
+    position: absolute;
+    top: 50%;
+    right: 0;
+transform: translate(47%, -43%);
+}
+
+
+
+.feedback-content-form__comments input {
+    height: 190px;  
+}
+
+.input_textarea {
+    height: 190px;
+}
+
+.feedback-content-form__input {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.feedback-content-form__input label {
+
+}
+
+.feedback-content-form__input:last-child {
+    margin-bottom: 0;
+}
+.feedback-content-form__input:last-child {
+    margin-bottom: 0;
+}
+
+.feedback-content-radio {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.feedback-content-radio__wrapper {
+    margin-right: 35px;
+    display: flex;
+    align-items: center;
+}
+
+.feedback-content-radio__wrapper:last-child {
+    margin-right: 0;
+}
+
+
+.feedback-content__wrapper label {
+    line-height: 175%;
+}
+
+
+
+@media (max-width: 1240px) {
+    .feedback-content__wrapper {
+        max-width: 510px;
+    }
+
+    .feedback-content-btn {
+        width: 100%;
+        max-width: 510px;
+    }
+
+}
+
+@media (max-width: 1030px) {
+    .feedback-content__img {
+        display: none;
+    }
+
+    .feedback-content__wrapper {
+        max-width: 100%;
+    }
+
+
+    .feedback-content-radio {
+        justify-content: center;
+    }
+
+    .feedback-content__wrapper {
+        padding: 40px 0;
+        background: #f3f3f3;
+        border-radius: 45px;
+        width: 100%;
+    }
+
+    .feedback-content-form {
+        padding: 0 30px;
+    }
+
+    .input_textarea {
+       
+    }
+
+    .feedback-content {
+        padding: 0px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .feedback-content-btn {
+        max-width: 100%;
+    }
+
+    .feedback-content-form {
+        margin-bottom: 0;
+    }
+
+    .feedback-content__wrapper {
+        margin-bottom: 30px;
+        padding-bottom: 50px;
+    }
+}
+
+@media (max-width: 950px) {
+
+}
+
+@media (max-width: 822px) {
+
+}
+
+@media (max-width: 598px) {
+
+}
+
+@media (max-width: 406px) {
+
+}

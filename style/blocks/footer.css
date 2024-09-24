@@ -1,0 +1,274 @@
+.footer {}
+
+.footer__wrapper {
+    padding: 55px 60px 50px 60px;
+    border-radius: 45px 45px 0 0;
+    background-color: var(--dark)
+}
+
+.footer-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 66px;
+}
+
+
+.footer-header-nav {
+    color: white;
+    display: flex;
+}
+
+.footer-header-nav-list li {
+    color: white;
+}
+
+.footer-header-nav-list__item {
+    color: white;
+}
+
+.footer-header-nav-list li:not(:last-child) {
+    margin-right: 40px;
+}
+
+.footer-header-nav-list {
+    display: flex;
+    align-items: center;
+
+}
+
+.footer-header-nav-list li:hover {
+    cursor: pointer;
+    border-bottom: 1px solid white;
+}
+
+.footer-header-partners {
+    display: flex;
+}
+
+.footer-header-partners__logo {}
+
+.footer-header-partners li:not(:last-child) {
+    margin-right: 20px;
+}
+
+
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+.footer-content__contact {
+    border-radius: 7px;
+    padding: 0px 7px;
+    background: var(--green);
+    max-width: 126px;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 27px;
+}
+
+.footer-content-info {
+    color: white;
+}
+
+.footer-content-info__inner:not(:last-child) {
+    margin-bottom: 20px;
+}
+
+
+.footer-positivus {
+    color: white;
+    border-top: 1px solid white;
+    padding-top: 50px;
+    display: flex;
+}
+
+.footer-positivus__copyright {
+    margin-right: 40px;
+}
+
+.footer-positivus-list {}
+
+.footer-positivus-list:hover {
+    cursor: pointer;
+    border-bottom: 1px solid white;
+
+}
+
+
+.footer-content-form {
+    display: flex;
+    align-items: center;
+    background: #292a32;
+    border-radius: 14px;
+    padding: 58px 40px;
+}
+
+.footer-content-form__radio {
+    margin-right: 20px;
+}
+
+.footer-content-form__radio input {
+    background: #292a32;
+    border: 1px solid white;
+}
+
+.footer-content-form__radio input::placeholder {
+    color: white;
+}
+
+.footer-content-form__btn {
+    color: black;
+    background: var(--green);
+}
+
+
+.footer-content-info__inner {
+    color: white;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.footer-content-info__inner:hover {
+    border-bottom: 1px solid white;
+}
+
+.footer-header-partners__mobile {
+    display: none;
+}
+
+
+@media (max-width: 1240px) {
+    .footer-content-info__inner {
+        font-size: 16px;
+    }
+
+    .footer-content-info-adress__inner {
+        font-size: 16px;
+    }
+
+    .footer-content-form__radio input {
+        font-size: 16px;
+    }
+
+    .footer-content-form__btn {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1030px) {
+    .footer-header-nav-list li:not(:last-child) {
+        margin-right: 20px;
+    }
+
+}
+
+@media (max-width: 950px) {
+    .footer-header {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-header-logo {
+        margin-bottom: 37px;
+    }
+
+    .footer-header-nav-list {
+        flex-direction: column;   
+    }
+
+    .footer-header-nav-list li:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+
+    .footer-content {
+        margin-bottom: 37px;
+    }
+
+    .footer-header-partners {
+        display: none;
+    }
+
+    .footer-header-partners__mobile{
+        display: flex;
+
+    }
+
+    .footer-header-partners__mobile li:not(:last-child) {
+        margin-right: 20px;
+    }
+
+
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-content__contact {
+        margin-bottom: 37px;
+    }
+
+    .footer-content__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+   
+
+    .footer-content-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 37px;
+    }
+
+    .footer-content-info__inner {
+        margin-bottom: 15px;
+    }
+
+    .footer-content-form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-content-form {
+        padding: 30px;
+        margin-bottom: 37px;
+    }
+
+    .footer-content-form__radio {
+        margin-right: 0;
+        margin-bottom: 22px;
+    }
+
+    .footer-content-form__btn {
+        width: 100%;
+    }
+
+
+
+    .footer-positivus {
+        flex-direction: column;
+        align-items: center;
+        padding-top: 37px;
+    }
+
+    .footer-positivus__copyright {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 822px) {}
+
+@media (max-width: 598px) {}
+
+@media (max-width: 406px) {}
+
+.blue {
+    background-color: blue;
+}

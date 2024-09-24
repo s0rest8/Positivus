@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Space Grotesk';
+    box-sizing: border-box;
+}
+
+:root {
+    --green:#B9FF66;
+    --dark:#191A23;
+    --grey:#F3F3F3;
+}
+
+h2 {
+    margin: 0;
+}
+
+p {
+    margin: 0px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1240px) {
+
+}
+
+@media (max-width: 1030px) {
+
+}
+@media (max-width: 950px) {}
+
+@media (max-width: 822px) {
+
+}
+
+@media (max-width: 598px) {
+
+}
+
+@media (max-width: 406px) {
+
+}

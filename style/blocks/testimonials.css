@@ -1,0 +1,122 @@
+.testimonials {
+    margin-bottom: 140px;
+}
+
+.testimonials-slider {
+    background-color: var(--dark);
+    padding: 68px 0 84px;
+    border-radius: 45px;
+    ;
+    overflow: hidden;
+
+}
+
+.testimonials-slider__inner {}
+
+.testimonials-slider__wrapper {
+    margin: 0 auto 138px;
+    max-width: 50%;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+
+}
+
+.testimonials-slider__slide {}
+
+.testimonials__description {
+    position: relative;
+    color: white;
+    font-size: 18px;
+    margin-bottom: 48px;
+    padding: 48px 52px 52px;
+    border: 1px solid var(--green);
+    border-radius: 45px;
+}
+
+.testimonials__description::before {
+    content: '';
+    rotate: 45deg;
+    /* border-top: 30px solid var(--green); */
+    position: absolute;
+    left: 47px;
+    bottom: 0px;
+    transform: translateX(74%);
+    background-color: var(--dark);
+    border-bottom: 1px solid var(--green);
+    border-right: 1px solid var(--green);
+    width: 32px;
+    height: 32px;
+}
+
+.testimonials-nav__pagination .swiper-pagination-bullet {
+    width: 14px;
+    height: 14px;
+    opacity: 1;
+    background-color: transparent;
+}
+
+.testimonials-nav__pagination .swiper-pagination-bullet-active {
+    background-color: transparent;
+}
+
+.testimonials-nav__pagination .swiper-pagination-bullet-active path {
+    fill: var(--green);
+}
+
+
+
+.testimonials-person {
+    display: flex;
+    flex-direction: column;
+    padding-left: 80px;
+}
+
+
+
+.testimonials-person__name {
+    color: var(--green);
+    font-size: 20px;
+}
+
+.testimonials-person__status {
+    color: white;
+    font-size: 20px;
+}
+
+.testimonials-nav-btn {
+    border: 0;
+    padding: 0;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.testimonials-nav-btn:disabled {
+    background-color: transparent;
+
+}
+
+.testimonials-nav-btn svg {
+    background-color: var(--dark);
+}
+
+
+.testimonials-swiper {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.testimonials-nav {
+    display: flex;
+    max-width: 50%;
+    margin: auto;
+}
+
+.testimonials-nav__pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.testimonials-nav-btn

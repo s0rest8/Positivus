@@ -1,0 +1,120 @@
+.team {
+    margin-bottom: 140px;
+}
+
+.team__cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 40px;
+    grid-row-gap: 40px;
+    margin-bottom: 40px;
+}
+
+.team-card {
+    border: 1px solid var(--dark);
+    border-radius: 45px;
+    padding: 40px 35px 64px 35px;
+    box-shadow: 0 5px 0 0 var(--dark);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.team-card {}
+
+.team-card-person {
+    display: flex;
+    gap: 20px;
+    border-bottom: 1px solid var(--dark);
+    padding-bottom: 28px;
+    margin-bottom: 28px;
+    width: 100%;
+
+}
+
+.team-card-person__description {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+.team-btn__wrapper {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+.team-btn {
+    display: flex;
+    width: 288px;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-card-person__photo {}
+
+.team-card-person__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.team-card-person__name {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.team-card-person__status {
+    font-size: 18px;
+}
+
+.team-card-person__biography {
+    font-size: 18px;
+}
+
+/* .team-card__mobile {
+    display: none;
+} */
+
+
+@media (max-width: 1240px) {
+    .team__cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .team-btn__wrapper {
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 1030px) {}
+
+@media (max-width: 950px) {}
+
+@media (max-width: 822px) {
+    .team__cards {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 598px) {}
+
+@media (max-width: 406px) {
+    .team-card-person__name {
+        font-size: 18px;
+    }
+
+    .team-card-person__status {
+        font-size: 16px;
+
+    }
+
+    .team-card-person__description {
+        font-size: 16px;
+        line-height: 150%;
+    }
+
+}
