@@ -1,5 +1,5 @@
-import testimonialsSlider from "/script/testimonials.js";
-import marqueeinit from "/script/marquee.js";
+import testimonialsSlider from "./testimonials.js";
+import marqueeinit from "./marquee.js";
 
 
 testimonialsSlider()
