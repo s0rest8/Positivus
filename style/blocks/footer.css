@@ -20,6 +20,9 @@
 
 .footer-header-nav-list li {
     color: white;
+    border-bottom: 1px solid transparent;
+    transition: border-color .3s;
+    padding-bottom: 2px;
 }
 
 .footer-header-nav-list__item {
@@ -38,7 +41,7 @@
 
 .footer-header-nav-list li:hover {
     cursor: pointer;
-    border-bottom: 1px solid white;
+    border-color: white;
 }
 
 .footer-header-partners {
@@ -50,8 +53,6 @@
 .footer-header-partners li:not(:last-child) {
     margin-right: 20px;
 }
-
-
 
 .footer-content {
     display: flex;
@@ -71,6 +72,8 @@
 
 .footer-content-info {
     color: white;
+    border-bottom: 1px solid transparent;
+    transition: border-color .3s;
 }
 
 .footer-content-info__inner:not(:last-child) {
@@ -89,11 +92,16 @@
     margin-right: 40px;
 }
 
-.footer-positivus-list {}
+.footer-positivus-list {
+    border-bottom: 1px solid transparent;
+    transition: border-color .3s;
+    padding-bottom: 2px;
+
+}
 
 .footer-positivus-list:hover {
     cursor: pointer;
-    border-bottom: 1px solid white;
+    border-color: white;
 
 }
 
@@ -125,14 +133,18 @@
 }
 
 
-.footer-content-info__inner {
+.footer-content-info__link {
     color: white;
     margin-bottom: 20px;
-    display: block;
+    padding-bottom: 2px;
+    border-bottom: 1px solid transparent;
+    transition: border-color .3s;
+    display: inline-block;
 }
 
-.footer-content-info__inner:hover {
-    border-bottom: 1px solid white;
+.footer-content-info__link:hover {
+    border-color: white;
+
 }
 
 .footer-header-partners__mobile {
@@ -140,8 +152,9 @@
 }
 
 
+
 @media (max-width: 1240px) {
-    .footer-content-info__inner {
+    .footer-content-info__link {
         font-size: 16px;
     }
 
@@ -176,7 +189,7 @@
     }
 
     .footer-header-nav-list {
-        flex-direction: column;   
+        flex-direction: column;
     }
 
     .footer-header-nav-list li:not(:last-child) {
@@ -192,7 +205,7 @@
         display: none;
     }
 
-    .footer-header-partners__mobile{
+    .footer-header-partners__mobile {
         display: flex;
 
     }
@@ -217,7 +230,7 @@
         align-items: center;
     }
 
-   
+
 
     .footer-content-info {
         display: flex;

@@ -1,6 +1,7 @@
 export default function testimonialsSlider() {
   const swiper = new Swiper('.testimonials-slider__inner', {
     // Optional parameters
+    loop: true,
     slidesPerView: 'auto',
     spaceBetween: '100',
     initialSlide: 1,
