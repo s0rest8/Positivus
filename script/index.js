@@ -1,9 +1,10 @@
 import testimonialsSlider from "./testimonials.js";
 import marqueeinit from "./marquee.js";
-
+import studiesSlider from "./studies.js";
 
 testimonialsSlider()
 marqueeinit()
+studiesSlider()
 
 
 
