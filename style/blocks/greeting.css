@@ -62,6 +62,40 @@
     margin-right: 40px;
 }
 
+.greeting-slider__inner {
+    display: flex;
+    padding-left: 540px;
+}
+
+.greeting-slider-btn {
+        padding: 0;
+        border: 0;
+        background-color: transparent;
+        cursor: pointer;
+        display: flex;
+        
+}
+
+.greeting-slider-btn:hover {
+    background-color: var(--green);
+    border-radius: 100%;
+}
+
+.greeting-slider-btn:not(:last-child) {
+    margin-right: 120px;
+}
+
+.greeting-slider-btn svg {
+    width: 30px;
+    height: 30px;
+
+}
+
+.greeting-btn__prev svg {
+    transform: rotate(180deg);
+}
+
+
 
 
 /* /* .greeting-marquee__list {
@@ -101,6 +135,7 @@
 
         font-size: 16px;
         line-height: 150%;
+
 
     }
 
