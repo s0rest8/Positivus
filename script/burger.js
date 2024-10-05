@@ -6,6 +6,7 @@ export default function burgerMenu() {
     function burgerMobileActiv() {
         burgerBtn.classList.toggle('active')
         burgerMobileWrapper.classList.toggle('active')
+
         if (burgerMobileWrapper.classList.contains('active')) {
             document.body.style.overflow = 'hidden'
         } else {
