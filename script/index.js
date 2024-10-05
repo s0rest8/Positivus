@@ -1,28 +1,17 @@
 import testimonialsSlider from "./testimonials.js";
-import marqueeinit from "./marquee.js";
+import marqueeInit from "./marquee.js";
 import studiesSlider from "./studies.js";
+import accordion from "./accordion.js";
+import burgerMenu from "./burger.js";
+
 
 testimonialsSlider()
-marqueeinit()
+marqueeInit()
 studiesSlider()
+accordion()
+burgerMenu()
 
 
 
-const accordionList = document.querySelector('.process__cards')
-const accordionArray = [...accordionList.children]
 
-accordionList.addEventListener('click', (event) => {
-    const clickedItem = event.target.closest('.process-card')
-
-    if (clickedItem.classList.contains('active')) {
-        clickedItem.classList.remove('active')
-    } else {
-        accordionArray.forEach(element => {
-            if (element.classList.contains('active')) {
-                element.classList.remove('active')
-            }
-        })
-        clickedItem.classList.add('active')
-    }
-})
 

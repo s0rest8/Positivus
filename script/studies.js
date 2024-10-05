@@ -2,14 +2,11 @@ export default function studiesSlider() {
 
     const mediaQuery = window.matchMedia('(min-width: 1030px)')
     let swiperInstance = createSlider()
-    sliderHandler()
-
-    window.addEventListener('resize', sliderHandler)
-
+   
     function sliderHandler() {
         if (!mediaQuery.matches && swiperInstance.destroyed) {
             swiperInstance = createSlider()
-        } else if (mediaQuery.matches && !swiperInstance.destroyed ){
+        } else if (mediaQuery.matches && !swiperInstance.destroyed) {
             swiperInstance.destroy()
         }
     }
@@ -22,5 +19,8 @@ export default function studiesSlider() {
 
         return swiper
     }
+
+    window.addEventListener('resize', sliderHandler)
+    sliderHandler()
 }
 

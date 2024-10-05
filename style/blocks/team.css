@@ -85,22 +85,52 @@
         grid-template-columns: 1fr 1fr;
     }
 
+
     .team-btn__wrapper {
         justify-content: space-around;
     }
+
+
 }
 
-@media (max-width: 1030px) {}
+@media (max-width: 1030px) {
+
+    .team-card {
+        padding: 30px 25px;
+    }
+    .team-card-person__photo img{
+        max-width: 70px;
+    }
+
+    .team-card-person__icon img {
+        max-width: 30px;
+    }
+
+    .team-card-person__name {
+        font-weight: 500;
+        font-size: 16px;
+    }
+    
+    .team-card-person__status {
+        font-size: 12px;
+    }
+    
+    .team-card-person__biography {
+        font-size: 14px;
+    }
+}
 
 @media (max-width: 950px) {}
 
 @media (max-width: 822px) {
+   
+}
+
+@media (max-width: 598px) {
     .team__cards {
         grid-template-columns: 1fr;
     }
 }
-
-@media (max-width: 598px) {}
 
 @media (max-width: 406px) {
     .team-card-person__name {

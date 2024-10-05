@@ -17,34 +17,34 @@
     <header class="header">
         <div class="container">
             <div class="header__inner">
-                <div class="header-logo">
-                    <a href="#"><img src="images/header/logo.png" `alt="Positivus"></a>
-                </div>
-                <div class="header__wrapper">
-                    <nav class="header-nav">
-                        <ul class="header-nav__list">
+                <a href="#" aria-label="Here must be a company logo">
+                    <img src="images/header/logo.png" alt="Here must be a company logo">
+                </a>
+                <div class="header__content">
+                    <nav class="header-navigation">
+                        <ul class="header-navigation__list">
                             <li>
-                                <a href="#" class="header-nav__link">
+                                <a href="#" class="header-navigation__link">
                                     About us
                                 </a>
                             </li>
                             <li>
-                                <a href="#services" class="header-nav__link">
+                                <a href="#services" class="header-navigation__link">
                                     Services
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="header-nav__link">
+                                <a href="#" class="header-navigation__link">
                                     Use Cases
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="header-nav__link">
+                                <a href="#" class="header-navigation__link">
                                     Pricing
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="header-nav__link">
+                                <a href="#" class="header-navigation__link">
                                     Blog
                                 </a>
                             </li>
@@ -54,13 +54,50 @@
                         Request a quote
                     </button>
                 </div>
-                <div class="header-burger">
-                    <img src="./images/header/burger.svg" alt="Бургер меню">
+                <button class="header-burger" aria-label="Here must be a mobile menu">
+                    <span></span>
+                </button>
+                <!-- <img src="./images/header/burger.svg" alt="Here must be a mobile menu"> -->
+            </div>
+            <div class="header-mobile header-mobile__active">
+                <div class="header-mobile__inner">
+                    <div class="header__content header-mobile__content">
+                        <nav class="header-navigation header-mobile-navigation">
+                            <ul class="header-navigation__list header-mobile-navigation__list">
+                                <li>
+                                    <a href="#" class="header-navigation__link header-mobile-navigation__link">
+                                        About us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#services" class="header-navigation__link header-mobile-navigation__link">
+                                        Services
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="header-navigation__link header-mobile-navigation__link">
+                                        Use Cases
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="header-navigation__link header-mobile-navigation__link">
+                                        Pricing
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="header-navigation__link header-mobile-navigation__link">
+                                        Blog
+                                    </a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <button class="header-btn header-btn__mobile">
+                            Request a quote
+                        </button>
+                    </div>
                 </div>
-
             </div>
         </div>
-
     </header>
     <main>
         <section class="greeting">
@@ -70,8 +107,8 @@
                         <div class="greeting-navigation">
                             Navigating the digital landscape for success
                         </div>
-                        <div class="greeting-img greeting-img_mobile">
-                            <img src="./images/greeting/greeting-image.png" alt="Картинка">
+                        <div class="greeting-img greeting-img_mobile" aria-label="Here must be a picture">
+                            <img src="./images/greeting/greeting-image.png" alt="Picture">
                         </div>
                         <div class="greeting-agency">
                             Our digital marketing agency helps businesses grow and succeed online through a range of
@@ -81,18 +118,30 @@
                             Book a consultation
                         </button>
                     </div>
-                    <div class="greeting-img">
-                        <img src="./images/greeting/greeting-image.png" alt="Картинка">
+                    <div class="greeting-img" aria-label="Here must be a picture">
+                        <img src="./images/greeting/greeting-image.png" alt="Picture">
                     </div>
                 </div>
                 <div class="greeting-marquee">
                     <div class="greeting-marquee__slider">
-                        <img src="images/greeting/amazon.png" alt="Партнёры">
-                        <img src="images/greeting/dribbble.png" alt="Партнёры">
-                        <img src="images/greeting/hubspot.png" alt="Партнёры">
-                        <img src="images/greeting/notion.png" alt="Партнёры">
-                        <img src="images/greeting/netflix.png" alt="Партнёры">
-                        <img src="images/greeting/zoom.png" alt="Партнёры">
+                        <div class="greeting-marquee-img__wrapper">
+                            <img src="images/greeting/amazon.png" alt="Партнёры">
+                        </div>
+                        <div class="greeting-marquee-img__wrapper">
+                            <img src="images/greeting/dribbble.png" alt="Партнёры">
+                        </div>
+                        <div class="greeting-marquee-img__wrapper">
+                            <img src="images/greeting/hubspot.png" alt="Партнёры">
+                        </div>
+                        <div class="greeting-marquee-img__wrapper">
+                            <img src="images/greeting/notion.png" alt="Партнёры">
+                        </div>
+                        <div class="greeting-marquee-img__wrapper">
+                            <img src="images/greeting/netflix.png" alt="Партнёры">
+                        </div>
+                        <div class="greeting-marquee-img__wrapper">
+                            <img src="images/greeting/zoom.png" alt="Партнёры">
+                        </div>
                     </div>
                 </div>
                 <div class="greeting-slider__inner">
@@ -102,12 +151,9 @@
                             viewBox="0 0 330 330" xml:space="preserve">
                             <g>
                                 <path
-                                    d="M165,0C74.019,0,0,74.02,0,165.001C0,255.981,74.019,330,165,330s165-74.019,165-164.999C330,74.02,255.981,0,165,0z
-		 M165,300c-74.44,0-135-60.561-135-134.999C30,90.562,90.56,30,165,30s135,60.562,135,135.001C300,239.439,239.439,300,165,300z" />
-                                <path d="M185.606,94.395c-5.857-5.857-15.355-5.857-21.213,0c-5.858,5.857-5.858,15.355,0,21.213l34.395,34.395l-103.79,0.006
-		c-8.284,0-15,6.717-14.999,15.001c0,8.284,6.717,14.999,15.001,14.999l103.784-0.006l-34.392,34.393
-		c-5.858,5.857-5.858,15.355,0,21.213c2.929,2.929,6.767,4.394,10.606,4.394c3.839,0,7.678-1.465,10.606-4.394l60-60.001
-		C248.42,172.793,250,168.979,250,165s-1.581-7.794-4.394-10.606L185.606,94.395z" />
+                                    d="M165,0C74.019,0,0,74.02,0,165.001C0,255.981,74.019,330,165,330s165-74.019,165-164.999C330,74.02,255.981,0,165,0zM165,300c-74.44,0-135-60.561-135-134.999C30,90.562,90.56,30,165,30s135,60.562,135,135.001C300,239.439,239.439,300,165,300z" />
+                                <path
+                                    d="M185.606,94.395c-5.857-5.857-15.355-5.857-21.213,0c-5.858,5.857-5.858,15.355,0,21.213l34.395,34.395l-103.79,0.006c-8.284,0-15,6.717-14.999,15.001c0,8.284,6.717,14.999,15.001,14.999l103.784-0.006l-34.392,34.393c-5.858,5.857-5.858,15.355,0,21.213c2.929,2.929,6.767,4.394,10.606,4.394c3.839,0,7.678-1.465,10.606-4.394l60-60.001C248.42,172.793,250,168.979,250,165s-1.581-7.794-4.394-10.606L185.606,94.395z" />
                             </g>
                         </svg>
                     </button>
@@ -117,12 +163,9 @@
                             viewBox="0 0 330 330" xml:space="preserve">
                             <g>
                                 <path
-                                    d="M165,0C74.019,0,0,74.02,0,165.001C0,255.981,74.019,330,165,330s165-74.019,165-164.999C330,74.02,255.981,0,165,0z
-		 M165,300c-74.44,0-135-60.561-135-134.999C30,90.562,90.56,30,165,30s135,60.562,135,135.001C300,239.439,239.439,300,165,300z" />
-                                <path d="M185.606,94.395c-5.857-5.857-15.355-5.857-21.213,0c-5.858,5.857-5.858,15.355,0,21.213l34.395,34.395l-103.79,0.006
-		c-8.284,0-15,6.717-14.999,15.001c0,8.284,6.717,14.999,15.001,14.999l103.784-0.006l-34.392,34.393
-		c-5.858,5.857-5.858,15.355,0,21.213c2.929,2.929,6.767,4.394,10.606,4.394c3.839,0,7.678-1.465,10.606-4.394l60-60.001
-		C248.42,172.793,250,168.979,250,165s-1.581-7.794-4.394-10.606L185.606,94.395z" />
+                                    d="M165,0C74.019,0,0,74.02,0,165.001C0,255.981,74.019,330,165,330s165-74.019,165-164.999C330,74.02,255.981,0,165,0z M165,300c-74.44,0-135-60.561-135-134.999C30,90.562,90.56,30,165,30s135,60.562,135,135.001C300,239.439,239.439,300,165,300z" />
+                                <path
+                                    d="M185.606,94.395c-5.857-5.857-15.355-5.857-21.213,0c-5.858,5.857-5.858,15.355,0,21.213l34.395,34.395l-103.79,0.006c-8.284,0-15,6.717-14.999,15.001c0,8.284,6.717,14.999,15.001,14.999l103.784-0.006l-34.392,34.393c-5.858,5.857-5.858,15.355,0,21.213c2.929,2.929,6.767,4.394,10.606,4.394c3.839,0,7.678-1.465,10.606-4.394l60-60.001C248.42,172.793,250,168.979,250,165s-1.581-7.794-4.394-10.606L185.606,94.395z" />
                             </g>
                         </svg>
                     </button>
@@ -360,12 +403,7 @@
                             Explore Real-Life Examples of Our Proven Digital Marketing Success through Our Case Studies
                         </p>
                     </header>
-                    <!-- <div class="swiper"></div>
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide" style="height: 200px; background: green;">Slide 1</div>
-                        <div class="swiper-slide" style="height: 200px; background: green;">Slide 2</div>
-                        <div class="swiper-slide" style="height: 200px; background: green;">Slide 3</div>
-                    </div> -->
+
                 </div>
                 <div class="studies-slider">
                     <div class="studies__cards swiper-wrapper">
@@ -808,9 +846,9 @@
                     </header>
                     <div class="testimonials-slider">
                         <div class="testimonials-slider__inner">
-                            <ul class="testimonials-slider__wrapper swiper-wrapper">
+                            <ul class="testimonials-slider__content swiper-wrapper">
                                 <li class="testimonials-slider__slide swiper-slide">
-                                    <div class="testimonials__description">
+                                    <div class="testimonials-slider__description">
                                         "We have been working with Positivus for the past year and have seen a
                                         significant
                                         increase
@@ -821,17 +859,17 @@
                                         Positivus
                                         to any company looking to grow their online presence."
                                     </div>
-                                    <div class="testimonials-person">
-                                        <div class="testimonials-person__name">
+                                    <div class="testimonials-slider-person">
+                                        <div class="testimonials-slider-person__name">
                                             John Smith
                                         </div>
-                                        <div class="testimonials-person__status">
+                                        <div class="testimonials-slider-person__status">
                                             Marketing Director at XYZ Corp
                                         </div>
                                     </div>
                                 </li>
                                 <li class="testimonials-slider__slide swiper-slide">
-                                    <div class="testimonials__description">
+                                    <div class="testimonials-slider__description">
                                         "We have been working with Positivus for the past year and have seen a
                                         significant
                                         increase
@@ -842,17 +880,17 @@
                                         Positivus
                                         to any company looking to grow their online presence."
                                     </div>
-                                    <div class="testimonials-person">
-                                        <div class="testimonials-person__name">
+                                    <div class="testimonials-slider-person">
+                                        <div class="testimonials-slider-person__name">
                                             John Smith
                                         </div>
-                                        <div class="testimonials-person__status">
+                                        <div class="testimonials-slider-person__status">
                                             Marketing Director at XYZ Corp
                                         </div>
                                     </div>
                                 </li>
                                 <li class="testimonials-slider__slide swiper-slide">
-                                    <div class="testimonials__description">
+                                    <div class="testimonials-slider__description">
                                         "We have been working with Positivus for the past year and have seen a
                                         significant
                                         increase
@@ -863,17 +901,17 @@
                                         Positivus
                                         to any company looking to grow their online presence."
                                     </div>
-                                    <div class="testimonials-person">
-                                        <div class="testimonials-person__name">
+                                    <div class="testimonials-slider-person">
+                                        <div class="testimonials-slider-person__name">
                                             John Smith
                                         </div>
-                                        <div class="testimonials-person__status">
+                                        <div class="testimonials-slider-person__status">
                                             Marketing Director at XYZ Corp
                                         </div>
                                     </div>
                                 </li>
                                 <li class="testimonials-slider__slide swiper-slide">
-                                    <div class="testimonials__description">
+                                    <div class="testimonials-slider__description">
                                         "We have been working with Positivus for the past year and have seen a
                                         significant
                                         increase
@@ -884,17 +922,17 @@
                                         Positivus
                                         to any company looking to grow their online presence."
                                     </div>
-                                    <div class="testimonials-person">
-                                        <div class="testimonials-person__name">
+                                    <div class="testimonials-slider-person">
+                                        <div class="testimonials-slider-person__name">
                                             John Smith
                                         </div>
-                                        <div class="testimonials-person__status">
+                                        <div class="testimonials-slider-person__status">
                                             Marketing Director at XYZ Corp
                                         </div>
                                     </div>
                                 </li>
                                 <li class="testimonials-slider__slide swiper-slide">
-                                    <div class="testimonials__description">
+                                    <div class="testimonials-slider__description">
                                         "We have been working with Positivus for the past year and have seen a
                                         significant
                                         increase
@@ -905,39 +943,18 @@
                                         Positivus
                                         to any company looking to grow their online presence."
                                     </div>
-                                    <div class="testimonials-person">
-                                        <div class="testimonials-person__name">
+                                    <div class="testimonials-slider-person">
+                                        <div class="testimonials-slider-person__name">
                                             John Smith
                                         </div>
-                                        <div class="testimonials-person__status">
-                                            Marketing Director at XYZ Corp
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="testimonials-slider__slide swiper-slide">
-                                    <div class="testimonials__description">
-                                        "We have been working with Positivus for the past year and have seen a
-                                        significant
-                                        increase
-                                        in website traffic and leads as a result of their efforts. The team is
-                                        professional,
-                                        responsive, and truly cares about the success of our business. We highly
-                                        recommend
-                                        Positivus
-                                        to any company looking to grow their online presence."
-                                    </div>
-                                    <div class="testimonials-person">
-                                        <div class="testimonials-person__name">
-                                            John Smith
-                                        </div>
-                                        <div class="testimonials-person__status">
+                                        <div class="testimonials-slider-person__status">
                                             Marketing Director at XYZ Corp
                                         </div>
                                     </div>
                                 </li>
                             </ul>
-                            <div class="testimonials-nav">
-                                <button class="testimonials-nav-btn testimonials-btn__prev">
+                            <div class="testimonials-slider-navigation">
+                                <button class="testimonials-slider-navigation-btn testimonials-btn__prev">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -945,9 +962,9 @@
                                             fill="white" />
                                     </svg>
                                 </button>
-                                <div class="testimonials-nav__pagination">
+                                <div class="testimonials-slider-navigation__pagination">
                                 </div>
-                                <button class="testimonials-nav-btn testimonials-btn__next">
+                                <button class="testimonials-slider-navigation-btn testimonials-btn__next">
                                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <path
@@ -976,11 +993,11 @@
                         <div class="feedback-content__wrapper">
                             <div class="feedback-content-radio">
                                 <div class="feedback-content-radio__wrapper">
-                                    <input class="input" type="radio" name="form-type">
+                                    <input class="input" type="radio" name="form-type" id="btn1">
                                     <label for="btn1">Say Hi</label>
                                 </div>
                                 <div class="feedback-content-radio__wrapper">
-                                    <input class="input" type="radio" name="form-type">
+                                    <input class="input" type="radio" name="form-type" id="btn2">
                                     <label for="btn2">Get a Quote</label>
                                 </div>
                             </div>
@@ -1015,33 +1032,33 @@
         <div class="container">
             <div class="footer__wrapper">
                 <header class="footer-header">
-                    <div class="footer-header-logo">
-                        <a href="#"><img src="./images/footer/Logo.png" alt="Логотип"></a>
-                    </div>
-                    <div class="footer-header-nav">
-                        <ul class="footer-header-nav-list">
+                    <a href="#" aria-label="Here must be a company logo">
+                        <img src="./images/footer/Logo.png" alt="Here must be a company logo">
+                    </a>
+                    <div class="footer-header-navigation">
+                        <ul class="footer-header-navigation-list">
                             <li>
-                                <a href="#" class="footer-header-nav-list__item">
+                                <a href="#" class="footer-header-navigation-list__item">
                                     About us
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="footer-header-nav-list__item">
+                                <a href="#" class="footer-header-navigation-list__item">
                                     Services
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="footer-header-nav-list__item">
+                                <a href="#" class="footer-header-navigation-list__item">
                                     Use Cases
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="footer-header-nav-list__item">
+                                <a href="#" class="footer-header-navigation-list__item">
                                     Pricing
                                 </a>
                             </li>
                             <li>
-                                <a href="#" class="footer-header-nav-list__item">
+                                <a href="#" class="footer-header-navigation-list__item">
                                     Blog
                                 </a>
                             </li>
@@ -1049,16 +1066,19 @@
                     </div>
                     <ul class="footer-header-partners">
                         <li>
-                            <a class="footer-header-partners__logo" href="#"><img src="./images/footer/linkedin.svg"
-                                    alt="Логотип"></a>
+                            <a class="footer-header-partners__logo" href="#" aria-label="Here must be a company logo">
+                                <img src="./images/footer/linkedin.svg" alt="Here must be a partner company logo">
+                            </a>
                         </li>
                         <li>
-                            <a class="footer-header-partners__logo" href="#"><img src="./images/footer/facebook.svg"
-                                    alt="Логотип"></a>
+                            <a class="footer-header-partners__logo" href="#" aria-label="Here must be a company logo">
+                                <img src="./images/footer/facebook.svg" alt="Here must be a partner company logo">
+                            </a>
                         </li>
                         <li>
-                            <a class="footer-header-partners__logo" href="#"><img src="./images/footer/twitter.svg"
-                                    alt="Логотип"></a>
+                            <a class="footer-header-partners__logo" href="#" aria-label="Here must be a company logo">
+                                <img src="./images/footer/twitter.svg" alt="Here must be a partner company logo">
+                            </a>
                         </li>
                     </ul>
                 </header>
@@ -1075,7 +1095,8 @@
                                 <a class="footer-content-info__link" href="#">Phone: 555-567-8901</a>
                             </div>
                             <div class="footer-content-info-adress__inner">
-                                Address: 1234 Main St Moonstone City, Stardust State 12345
+                                <span>Address: 1234 Main St</span>
+                                <span>Moonstone City, Stardust State 12345</span>
                             </div>
                         </div>
                     </div>
@@ -1089,16 +1110,19 @@
                     </div>
                     <ul class="footer-header-partners footer-header-partners__mobile">
                         <li>
-                            <a class="footer-header-partners__logo" href="#"><img src="./images/footer/linkedin.svg"
-                                    alt="Логотип"></a>
+                            <a class="footer-header-partners__logo" href="#">
+                                <img src="./images/footer/linkedin.svg" alt="Here must be a partner company logo">
+                            </a>
                         </li>
                         <li>
-                            <a class="footer-header-partners__logo" href="#"><img src="./images/footer/facebook.svg"
-                                    alt="Логотип"></a>
+                            <a class="footer-header-partners__logo" href="#">
+                                <img src="./images/footer/facebook.svg" alt="Here must be a partner company logo">
+                            </a>
                         </li>
                         <li>
-                            <a class="footer-header-partners__logo" href="#"><img src="./images/footer/twitter.svg"
-                                    alt="Логотип"></a>
+                            <a class="footer-header-partners__logo" href="#">
+                                <img src="./images/footer/twitter.svg" alt="Here must be a partner company logo">
+                            </a>
                         </li>
                     </ul>
                 </div>
@@ -1108,8 +1132,9 @@
                     </div>
                     <ul class="footer-positivus-list">
                         <li>
-                            <a class="footer-positivus-list__item" href="#"></a>
-                            Privacy Policy
+                            <a class="footer-positivus-list__item" href="#">
+                                Privacy Policy
+                            </a>
                         </li>
                     </ul>
                 </div>

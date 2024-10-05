@@ -44,12 +44,13 @@
     border-radius: 14px;
     padding: 18px 30px;
     width: 100%;
-   font-size: 18px;
+    font-size: 18px;
+    outline: none;
 }
 
 .input_textarea {
     max-width: 556px;
-    resize: none    ;
+    resize: none;
 }
 
 .input[type=radio] {
@@ -69,8 +70,6 @@
     line-height: 175%;
 }
 
-
-
 .input[type=radio]:checked::before {
     content: '';
     background-color: var(--green);
@@ -80,21 +79,8 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-
+    transform: translate(-50%, -50%);
 }
-
-
-
-
-@media (max-width: 598px) {
-    .button {
-        font-size: 16px;
-    }
-}
-
-
-
 
 @media (max-width: 1240px) {}
 
@@ -104,12 +90,12 @@
         display: flex;
         align-items: center;
         flex-direction: column;
+        margin-bottom: 40px !important;
     }
 
     .section-header>h2 {
-        font-size: 34px;
+        font-size: 36px;
         color: black;
-        margin-right: 40px;
         border-radius: 7px;
         width: max-content;
         margin-bottom: 30px;
@@ -118,20 +104,23 @@
 
     .section-header>p {
         text-align: center;
-        font-size: 14px;
+        font-size: 16px;
         color: black;
-        max-width: 880px;
     }
 
     .input_textarea {
         max-width: 100%;
-        resize: none    ;
+        resize: none;
     }
 }
 
-
 @media (max-width: 822px) {}
 
-@media (max-width: 598px) {}
+@media (max-width: 598px) {
+    .button {
+        font-size: 16px;
+        line-height: 140%;
+    }
+}
 
 @media (max-width: 406px) {}
